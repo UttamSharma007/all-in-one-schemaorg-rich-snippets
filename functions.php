@@ -71,7 +71,7 @@ function display_rich_snippet($content) {
 		$item = get_post_meta( $post->ID, '_bsf_item_name', true );
 		$rating = get_post_meta( $post->ID, '_bsf_rating', true );
 		$reviewer = get_post_meta( $post->ID, '_bsf_item_reviewer', true);
-		$post_date = get_the_date('Y-m-d');
+		$post_date = get_the_modified_time('Y-m-d');
 		if(trim($reviewer) != "")
 		{
 			if($args_review['item_reviewer'] != "")
@@ -83,7 +83,7 @@ function display_rich_snippet($content) {
 		{
 			if( $args_review['review_date'] != "")
 				$review .= "<div class='snippet-label'>".esc_attr(stripslashes( $args_review['review_date'] ) ) ."</div>";
-			$review .= "<div class='snippet-data'> <time itemprop='datePublished' datetime='".get_the_time( 'c' )."'>".esc_attr( $post_date )."</time></div>";
+			$review .= "<div class='snippet-data'> <time itemprop='dateModified' datetime='".get_the_modified_time( 'c' )."'>".esc_attr( $post_date )."</time></div>";
 		}
 		if(trim($item) != "")
 		{
