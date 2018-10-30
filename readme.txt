@@ -1,15 +1,17 @@
 === All In One Schema Rich Snippets ===
 Contributors: brainstormforce, yawalkarm
 Donate link: https://www.brainstormforce.com
-Tags: Review, Event, People, Product, Recipe, Software Application, Video, Article, rdfa, rich snippet, schema.org, schema, microdata, microformat, SERP, Google, Yahoo, Bing
+Tags: schema markup, structured data, rich snippets, schema.org, Microdata, schema
 Requires at least: 3.7
-Tested up to: 4.9.2
-Stable tag: 1.5.2
+Tested up to: 4.9.8
+Stable tag: 1.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Boost CTR. Improve SEO & Rankings. Supports most of the content type. Works perfectly with Google, Bing, Yahoo & Facebook.
 
 == Description ==
+
+Get eye catching results in search engines with the most popular schema markup plugin. Easy implementation of schema types like Review, Events, Recipes, Article, Products, Services etc
 
 = What is a Rich Snippet? =
 It is basically a short summary of your page in the search results of Google, Yahoo, Bing and sometimes in the News feed of Facebook in nice format with star ratings, author photo, image, etc.
@@ -18,7 +20,7 @@ It is basically a short summary of your page in the search results of Google, Ya
 = How does a Rich Snippet help? =
 - It gives search engines only the important & precise information to display in search result snippets.
 - Rich Snippets are very interactive (photos, star ratings, price, author, etc.) to let you stand out from competition
-- [See what difference it makes](https://www.brainstormforce.com/schema-rich-snippets/ "See the difference") in CTR (Click Through Rate)
+- [See what difference it makes](https://wpschema.com/free-rich-snippets-schema-plugin-for-wordpress/ "See the difference") in CTR (Click Through Rate)
 - Helps you rank higher in search results
 - Helps Facebook display proper information when users share your links on Facebook
 > **Curious, how does this plugin work?**
@@ -77,6 +79,14 @@ Review, Event, People, Product, Recipe, Software Application, Video, Articles et
 4. Test the post or page URL in Google Rich Snippets Testing
 
 == Changelog ==
+
+= 1.5.4 =
+* Improvement: Dashboard UI Updated.
+* Fix: Removed publisher logo width-height meta tags.
+* Fix: Removed default border CSS for images in frontend.
+
+= 1.5.3 =
+* Improvement: Updated schema exiting action and enqueue files function.
 
 = 1.5.2 =
 * Fix: Frontend Summary box structure validation issue.
@@ -188,6 +198,3 @@ Review, Event, People, Product, Recipe, Software Application, Video, Articles et
 
 = 1.0 =
 * Initial Release.
-
-== Upgrade Notice ==
-Note: Minor bug fixes. Update the plugin to enjoy bug free blogging!
