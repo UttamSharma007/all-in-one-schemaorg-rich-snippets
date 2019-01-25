@@ -127,7 +127,7 @@ class bsf_Meta_Box {
 			if ( 'multicheck' == $field['type'] ) $field['multiple'] = true;
 			$meta = get_post_meta( $post->ID, $field['id'], 'multicheck' != $field['type'] /* If multicheck this can be multiple values */ );
 			echo '<tr class="', $field['class'],'">';
-			if ( $field['type'] == "title" ) {
+			if ( $field['type'] == "title" || ( $field['type'] == "select" && $field['name'] == '' ) ) {
 				echo '<td colspan="2">';
 			} else {
 				if( $this->_meta_box['show_names'] == true ) {
@@ -352,6 +352,7 @@ class bsf_Meta_Box {
 			}
 			echo '</td>','</tr>';
 		}
+		echo '<td></td>','<td class="bsf-table-data"><div class="bsf-tooltip"><span class="dashicons dashicons-info"></span><span class="bsf-tooltiptext">Don&#39;t want Schema data to be visible on your site&#39;s frontend? <a href="https://wpschema.com/?utm_source=allinone&utm_campaign=repo&utm_medium=editpage" target="_blank">Use Schema Pro</span></a></div></td>';
 		echo '</table>';
 	}
 	// Save data from metabox
